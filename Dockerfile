@@ -2,8 +2,8 @@ FROM openjdk:17-jdk-alpine
 
 WORKDIR /usr/src/app
 
-COPY app.java .
+COPY Main.java .
 
-RUN javac app.java
+RUN javac Main.java
 
 CMD ["java", "app"]
